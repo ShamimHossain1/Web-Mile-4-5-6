@@ -1,12 +1,13 @@
 
-let n = 5, arr = [];
+let n = 100, arr = [];
 
 for (let index = 0; index < n; index++) {
- arr[index] = index + 1;
+    arr[index] = index + 1;
 }
- console.log(arr);
 
-const factorial = arr.reduce((a, b)=>{
+console.log(arr);
+
+const factorial = arr.reduce((a, b) => {
     return a * b;
 })
 
