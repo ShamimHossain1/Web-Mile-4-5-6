@@ -21,3 +21,15 @@ let h1 = document.querySelector("h1");
 h1.style.color ="red";
 
 
+let newBtn = document.createElement("button");
+newBtn.textContent = "Click me";
+newBtn.style.backgroundColor = "blue";
+newBtn.style.padding = "10px";
+newBtn.style.margin = "10px";
+newBtn.style.borderRadius = "10px";
+newBtn.style.cursor = "pointer";
+newBtn.style.color = "white";
+
+let div = document.getElementById("new-button");
+div.append(newBtn);
+
