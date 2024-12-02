@@ -10,3 +10,14 @@ button.addEventListener('click', () => {
     description.textContent = 'The text has been updated successfully.';
     button.textContent = 'Clicked!';
 });
+
+let para = document.querySelector("p");
+console.log(para.setAttribute("id","hero"));
+
+console.log(para.getAttribute("id"));
+
+let h1 = document.querySelector("h1");
+
+h1.style.color ="red";
+
+
