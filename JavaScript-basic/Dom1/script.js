@@ -35,27 +35,54 @@ div.append(newBtn);
 
 
 // Add various events to the button
-newBtn.onclick = function() {
+
+// newBtn.onclick = function() {
+//     console.log("Button clicked!");
+// };
+
+// newBtn.ondblclick = function() {
+//     console.log("Button was double clicked!");
+// };
+
+// newBtn.onmouseover = function() {
+//     console.log("Mouse is over the button!");
+// };
+
+// newBtn.onmouseout = function() {
+//     console.log("Mouse left the button!");
+// };
+
+// newBtn.onmousedown = function() {
+//     console.log("Mouse button is pressed down on the button!");
+// };
+
+// newBtn.onmouseup = function() {
+//     console.log("Mouse button is released on the button!");
+// };
+
+
+// addEventListener  Methods
+
+newBtn.addEventListener("click", function() {
     console.log("Button clicked!");
-};
+});
 
-newBtn.ondblclick = function() {
+newBtn.addEventListener("dblclick", function() {
     console.log("Button was double clicked!");
-};
+});
 
-newBtn.onmouseover = function() {
+newBtn.addEventListener("mouseover", function() {
     console.log("Mouse is over the button!");
-};
+});
 
-newBtn.onmouseout = function() {
+newBtn.addEventListener("mouseout", function() {
     console.log("Mouse left the button!");
-};
+});
 
-newBtn.onmousedown = function() {
+newBtn.addEventListener("mousedown", function() {
     console.log("Mouse button is pressed down on the button!");
-};
+});
 
-newBtn.onmouseup = function() {
+newBtn.addEventListener("mouseup", function() {
     console.log("Mouse button is released on the button!");
-};
-
+});
