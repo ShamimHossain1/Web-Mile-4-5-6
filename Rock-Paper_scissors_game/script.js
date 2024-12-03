@@ -21,10 +21,12 @@ const showWinner = (userWin) => {
         msgElement.innerText = "Congratulations! You win!";
         userScore++;
         document.getElementById("user-score").innerText = userScore;
+        msgElement.style.color = "#00ff88";
         msgElement.classList.add("animate-pop");
     } else {
         msgElement.innerText = "Computer wins!";
         computerScore++;
+        msgElement.style.color = "#ff1034";
         document.getElementById("comp-score").innerText = computerScore;
         msgElement.classList.add("animate-pop");
     }
@@ -48,7 +50,7 @@ const playGame = (userChoice) => {
         Draw++;
         document.getElementById("draw").innerText = Draw;
         document.getElementById("msg").classList.add("animate-pop");
-
+        document.getElementById("msg").style.color = "#ffcc00";
         document.getElementById("msg").addEventListener("animationend", () => {
             document.getElementById("msg").classList.remove("animate-pop");
         }, { once: true });
