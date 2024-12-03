@@ -98,10 +98,12 @@ modeBtn.addEventListener("click",()=>{
         mode = "Light Mode";
         document.body.style.backgroundColor = "black";
         console.log(mode);
+        document.querySelector("body").style.color="white";
     }
     else {
         mode = "Dark Mode";
         document.body.style.backgroundColor = "white";
         console.log("white");
+        document.querySelector("body").style.color="black";
     }
 });
