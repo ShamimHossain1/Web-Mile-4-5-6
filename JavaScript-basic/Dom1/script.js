@@ -36,29 +36,29 @@ div.append(newBtn);
 
 // Add various events to the button
 
-// newBtn.onclick = function() {
-//     console.log("Button clicked!");
-// };
+newBtn.onclick = function() {
+    console.log("Button clicked!");
+};
 
-// newBtn.ondblclick = function() {
-//     console.log("Button was double clicked!");
-// };
+newBtn.ondblclick = function() {
+    console.log("Button was double clicked!");
+};
 
-// newBtn.onmouseover = function() {
-//     console.log("Mouse is over the button!");
-// };
+newBtn.onmouseover = function() {
+    console.log("Mouse is over the button!");
+};
 
-// newBtn.onmouseout = function() {
-//     console.log("Mouse left the button!");
-// };
+newBtn.onmouseout = function() {
+    console.log("Mouse left the button!");
+};
 
-// newBtn.onmousedown = function() {
-//     console.log("Mouse button is pressed down on the button!");
-// };
+newBtn.onmousedown = function() {
+    console.log("Mouse button is pressed down on the button!");
+};
 
-// newBtn.onmouseup = function() {
-//     console.log("Mouse button is released on the button!");
-// };
+newBtn.onmouseup = function() {
+    console.log("Mouse button is released on the button!");
+};
 
 
 // addEventListener  Methods
@@ -85,4 +85,23 @@ newBtn.addEventListener("mousedown", function() {
 
 newBtn.addEventListener("mouseup", function() {
     console.log("Mouse button is released on the button!");
+});
+
+
+// Dark and light mode
+
+let modeBtn = document.getElementById("mode");
+let mode = modeBtn.innerText;
+
+modeBtn.addEventListener("click",()=>{
+    if (mode == "Dark Mode"){
+        mode = "Light Mode";
+        document.body.style.backgroundColor = "black";
+        console.log(mode);
+    }
+    else {
+        mode = "Dark Mode";
+        document.body.style.backgroundColor = "white";
+        console.log("white");
+    }
 });
