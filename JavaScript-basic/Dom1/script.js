@@ -33,3 +33,29 @@ newBtn.style.color = "white";
 let div = document.getElementById("new-button");
 div.append(newBtn);
 
+
+// Add various events to the button
+newBtn.onclick = function() {
+    console.log("Button clicked!");
+};
+
+newBtn.ondblclick = function() {
+    console.log("Button was double clicked!");
+};
+
+newBtn.onmouseover = function() {
+    console.log("Mouse is over the button!");
+};
+
+newBtn.onmouseout = function() {
+    console.log("Mouse left the button!");
+};
+
+newBtn.onmousedown = function() {
+    console.log("Mouse button is pressed down on the button!");
+};
+
+newBtn.onmouseup = function() {
+    console.log("Mouse button is released on the button!");
+};
+
