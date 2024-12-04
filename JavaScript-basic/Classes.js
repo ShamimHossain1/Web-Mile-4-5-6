@@ -15,9 +15,15 @@ class Toyota{
     }
 }
 
+class Offroad extends Toyota{}
+
+let SUV = new Offroad("Defender","AWD");
+
+
 let  Camry = new Toyota("Camry", "AWD");
 
 console.log(Camry.name);
+console.log(SUV.name);
 
 
 
