@@ -1,24 +1,10 @@
-
-const print = {
-    
-    printt: ()=>{console.log("print here");}
-
+class Toyota{
+    start(){
+        console.log("Toyota is starting");
+    }
+    stop(){
+        console.log("Toyota is stopping");
+    }
 }
 
-
-const shamim = {
-    name: "Shamim",
-    age: 25,
-    occupation: "Software Engineer",
-    hobbies: ["reading", "hiking", "coding"],
-    printHobbies(){
-        for(const hobbie of shamim.hobbies){
-            console.log(hobbie);
-        };
-    }
-};
-
-shamim.__proto__ = print;
-
-shamim.printt();
-// console.log(shamim.printt);
+let fortuner = new Toyota();
