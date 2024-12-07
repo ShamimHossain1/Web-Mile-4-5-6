@@ -12,13 +12,13 @@ button.addEventListener('click', () => {
 });
 
 let para = document.querySelector("p");
-console.log(para.setAttribute("id","hero"));
+console.log(para.setAttribute("id", "hero"));
 
 console.log(para.getAttribute("id"));
 
 let h1 = document.querySelector("h1");
 
-h1.style.color ="red";
+h1.style.color = "red";
 
 
 let newBtn = document.createElement("button");
@@ -36,54 +36,54 @@ div.append(newBtn);
 
 // Add various events to the button
 
-newBtn.onclick = function() {
+newBtn.onclick = function () {
     console.log("Button clicked!");
 };
 
-newBtn.ondblclick = function() {
+newBtn.ondblclick = function () {
     console.log("Button was double clicked!");
 };
 
-newBtn.onmouseover = function() {
+newBtn.onmouseover = function () {
     console.log("Mouse is over the button!");
 };
 
-newBtn.onmouseout = function() {
+newBtn.onmouseout = function () {
     console.log("Mouse left the button!");
 };
 
-newBtn.onmousedown = function() {
+newBtn.onmousedown = function () {
     console.log("Mouse button is pressed down on the button!");
 };
 
-newBtn.onmouseup = function() {
+newBtn.onmouseup = function () {
     console.log("Mouse button is released on the button!");
 };
 
 
 // addEventListener  Methods
 
-newBtn.addEventListener("click", function() {
+newBtn.addEventListener("click", function () {
     console.log("Button clicked!");
 });
 
-newBtn.addEventListener("dblclick", function() {
+newBtn.addEventListener("dblclick", function () {
     console.log("Button was double clicked!");
 });
 
-newBtn.addEventListener("mouseover", function() {
+newBtn.addEventListener("mouseover", function () {
     console.log("Mouse is over the button!");
 });
 
-newBtn.addEventListener("mouseout", function() {
+newBtn.addEventListener("mouseout", function () {
     console.log("Mouse left the button!");
 });
 
-newBtn.addEventListener("mousedown", function() {
+newBtn.addEventListener("mousedown", function () {
     console.log("Mouse button is pressed down on the button!");
 });
 
-newBtn.addEventListener("mouseup", function() {
+newBtn.addEventListener("mouseup", function () {
     console.log("Mouse button is released on the button!");
 });
 
@@ -93,17 +93,17 @@ newBtn.addEventListener("mouseup", function() {
 let modeBtn = document.getElementById("mode");
 let mode = modeBtn.innerText;
 
-modeBtn.addEventListener("click",()=>{
-    if (mode == "Dark Mode"){
+modeBtn.addEventListener("click", () => {
+    if (mode == "Dark Mode") {
         mode = "Light Mode";
         document.body.style.backgroundColor = "black";
         console.log(mode);
-        document.querySelector("body").style.color="white";
+        document.querySelector("body").style.color = "white";
     }
     else {
         mode = "Dark Mode";
         document.body.style.backgroundColor = "white";
         console.log("white");
-        document.querySelector("body").style.color="black";
+        document.querySelector("body").style.color = "black";
     }
 });

@@ -8,11 +8,11 @@ function getData(dataId, getNextData) {
 }
 
 getData(1, () => {
-     getData(2, () => {
-         getData(3, () => {
-             getData(4) 
-            }) 
-        }) 
-    });
+    getData(2, () => {
+        getData(3, () => {
+            getData(4)
+        })
+    })
+});
 // getData(2);
 // getData(1);
