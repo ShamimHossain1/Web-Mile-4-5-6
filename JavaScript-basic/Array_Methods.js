@@ -19,7 +19,7 @@ let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
 fruits.push("Orange");
 console.log("After push:", fruits); // ["Apple", "Banana", "Cherry", "Orange"]
 
-// // 2. pop() - Removes the last element from the array and returns it
+// 2. pop() - Removes the last element from the array and returns it
 let lastFruit = fruits.pop();
 console.log("Popped element:", lastFruit); // "Orange"
 console.log("After pop:", fruits); // ["Apple", "Banana", "Cherry"]
@@ -41,8 +41,6 @@ console.log("After unshift:", fruits); // ["Strawberry", "Apple", "Banana", "Che
 let firstFruit = fruits.shift();
 console.log("Shifted element:", firstFruit); // "Strawberry"
 console.log("After shift:", fruits); // ["Apple", "Banana", "Cherry"]
-
-
 
 
 // 1. slice(start, end) - Returns a shallow copy of a portion of the array without modifying the original array
