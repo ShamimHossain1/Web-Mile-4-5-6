@@ -13,7 +13,6 @@ const genCmpChoice = () => {
 
 
 
-
 const showWinner = (userWin) => {
     const msgElement = document.getElementById("msg");
 
