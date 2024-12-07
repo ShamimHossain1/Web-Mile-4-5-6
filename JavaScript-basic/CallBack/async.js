@@ -42,6 +42,6 @@ function getData(dataId){
     })();
  };
 
-    await getAllData();;
+    await getAllData();
     await IIFeMethod(); 
 })();
