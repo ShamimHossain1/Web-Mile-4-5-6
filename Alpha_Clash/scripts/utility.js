@@ -10,4 +10,8 @@ function getARandomAlphabet(){
     const alphabetString = "abcdefghijklmnopqrstuvwxyz";
     const index = Math.round(Math.random() *25);
     return alphabetString[index];
-}
+};
+
+function addBackgroundColorById(id){
+    document.getElementById(id).classList.add('bg-orange-400');
+};
