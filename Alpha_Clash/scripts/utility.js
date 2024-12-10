@@ -15,3 +15,7 @@ function getARandomAlphabet(){
 function addBackgroundColorById(id){
     document.getElementById(id).classList.add('bg-orange-400');
 };
+function removeBackgroundColorById(id){
+    document.getElementById(id).classList.remove('bg-orange-400');
+};
+
