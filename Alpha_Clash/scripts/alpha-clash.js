@@ -36,15 +36,10 @@ function keyPress(event) {
             setTextElementValueById("current-life", remainingLife);
         }
 
-
-
-
         // let currentLife = parseInt(document.getElementById("current-life").innerText);
 
         // const newLife = currentLife - 1;
         // document.getElementById("current-life").innerText = newLife;
-
-
     }
 
 };
