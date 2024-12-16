@@ -21,6 +21,14 @@ function getData (){
 
 function displayData(data){
     console.log(data);
+
+    const list = document.getElementById("list");
+    for(const info of data){
+        console.log(info);
+        const li = document.createElement('li');
+        li.textContent = info.url;
+        list.appendChild(li);
+    }
 }
 
 
