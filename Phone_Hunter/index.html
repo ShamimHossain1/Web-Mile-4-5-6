@@ -15,26 +15,37 @@
 
 
     <main>
+        <h1 class="text-center font-bold text-6xl mt-10">Search a Phone</h1>
+
+        <!-- Search Area  -->
 
         <section class="bg-gray-100 p-4 w-1/5 mx-auto rounded-xl mt-12">
-            <label class="input input-bordered flex items-center gap-2">
+            <label class="input input-bordered flex items-center gap-3">
                 <input id="search-field" type="text" class="grow" placeholder="Search" />
-                <button onclick="handleSearch()"><svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 16 16"
-                    fill="currentColor"
-                    class="h-4 w-4 opacity-70">
-                    <path
-                      fill-rule="evenodd"
-                      d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                      clip-rule="evenodd" />
-                  </svg></button>
-              </label>
+                <button onclick="handleSearch()"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                        fill="currentColor" class="h-4 w-4 opacity-70">
+                        <path fill-rule="evenodd"
+                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                            clip-rule="evenodd" />
+                    </svg></button>
+            </label>
         </section>
 
+       
+
+        <!-- Search result section  -->
+
         <div id="phone-container" class="grid grid-cols-4 px-32 gap-7 my-16 ">
-            
-    
+        </div>
+         <!-- loading spinner  -->
+
+         <div id="loading-spinner" class="text-center my-32 hidden">
+            <span class="loading loading-spinner text-error "></span>
+        </div>
+
+        <!-- Show all button  -->
+        <div id="show-btn" class="text-center hidden mb-10">
+            <button onclick="showAll()" class="btn btn-outline">Show All</button>
         </div>
     </main>
 
