@@ -31,21 +31,30 @@
             </label>
         </section>
 
-       
+
 
         <!-- Search result section  -->
 
         <div id="phone-container" class="grid grid-cols-4 px-32 gap-7 my-16 ">
         </div>
-         <!-- loading spinner  -->
+        <!-- loading spinner  -->
 
-         <div id="loading-spinner" class="text-center my-32 hidden">
+        <div id="loading-spinner" class="text-center my-32 hidden">
             <span class="loading loading-spinner text-error "></span>
         </div>
 
         <!-- Show all button  -->
         <div id="show-btn" class="text-center hidden mb-10">
             <button onclick="showAll()" class="btn btn-outline">Show All</button>
+        </div>
+
+
+        <!-- show mobile details  -->
+
+        <!-- Open the modal using ID.showModal() method -->
+        <div >
+            <dialog id="phone_Details" class="modal modal-bottom sm:modal-middle">
+            </dialog>
         </div>
     </main>
 
