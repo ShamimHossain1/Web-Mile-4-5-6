@@ -1,0 +1,24 @@
+# Alpha Clash Pro
+
+**Alpha Clash Pro** is an engaging and interactive typing game designed to improve your keyboard skills. Challenge yourself by typing the displayed letters accurately while maintaining your score and lives. Compete against yourself to set new high scores!
+
+---
+
+## **Features**
+
+- **Interactive Gameplay**: Type the displayed letters accurately to score points.
+- **Score & Lives Management**: Gain points for correct inputs and lose lives for incorrect ones.
+- **Escape Key Functionality**: Exit the game instantly by pressing "Escape."
+- **Randomized Letters**: Each correct input generates a new random letter.
+- **Dynamic UI**: TailwindCSS and DaisyUI provide a visually appealing and responsive interface.
+- **Game Over Screen**: Displays the final score and encourages replay for skill improvement.
+
+---
+
+## **Technologies Used**
+
+- **Frontend**: HTML, CSS (TailwindCSS, DaisyUI), JavaScript
+- **Frameworks**: TailwindCSS for styling
+- **Libraries**: DaisyUI for enhanced UI components
+
+---
