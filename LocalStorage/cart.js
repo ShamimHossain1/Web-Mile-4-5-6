@@ -20,7 +20,7 @@ const getStoredCart = () => {
     const storedCart = localStorage.getItem('cart');
     let cart = {};
     if (storedCart) {
-       cart = JSON.parse(storedCart);
+        cart = JSON.parse(storedCart);
     }
     return cart;
 
@@ -29,6 +29,17 @@ const getStoredCart = () => {
 const saveToLocal = (p, q) => {
     const cart = getStoredCart();
     cart[p] = q;
-    console.log(cart);
+    const cartStringyFy = JSON.stringify(cart);
+    //    console.log(cartStringyFy);
+    localStorage.setItem('cart', cartStringyFy);
 
 }
+
+const displayProductLocal = ()=>{
+    const cart = getStoredCart();
+    for(const p in cart){
+        displayProduct(p, cart[p]);
+    }
+} 
+
+displayProductLocal();
